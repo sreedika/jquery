@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script src="C:\sublime\html\jquery\jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$('.hover').mouseover(function(){
+				alert("you hovered me");	
+			});
+			$('.hover').mouseout(function(){
+				alert("you exited");	
+			});
+		});
+	</script>
+
+<body>
+<div class="hover" onmouseover="hover()">
+		When a delete button is clicked, corresponding input field is removed. To remove the added input fields, just write click function on remove button and inside this function just use parent() method to get parent element. Then use remove() method to remove added input box.
+</div>
+</body>
+</html>

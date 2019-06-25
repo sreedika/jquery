@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="C:\sublime\html\jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//alert("hai");
+			$('.mybtn').click(function()
+			{
+				v_value=$('#test').val();
+				console.log(v_value);
+				if(v_value=='')
+				{
+					$('label').html('enter your value');
+					$('#test').css('borderColor','red');
+				}
+				$('p').hide('1000');
+				$('p').show('3000');
+
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<p>When a delete button is clicked, corresponding input field is removed. To remove the added input fields, just write click function on remove button and inside this function just use parent() method to get parent element. Then use remove() method to remove added input box .</p>
+<input type="text" id="test">
+<label></label>
+<br><br>
+<input type="button" class="mybtn" value="submit">
+</body>
+</html>
