@@ -3,7 +3,7 @@
 <head>
 	<title></title>
 	<style type="text/css">
-		div{
+	.rect{
 			background-color: yellow;
 			height: 100px;
 			width: 100px;
@@ -11,11 +11,12 @@
 			
 		}
 	</style>
-	<script src="C:\sublime\html\jquery\jquery-3.4.1.min.js"></script>
+	<script src="jquery-3.4.1.min.js"></script>
 	<script type="text/javascript">
-$(document).ready(function(){
+$(function(){
 	$('button').click(function(){
-		$('div').animate({'left':'250px'});
+		$('.rect').animate({left:'250px'},function(){
+			});
 	});
 
 });
@@ -23,6 +24,6 @@ $(document).ready(function(){
 </head>
 <body>
 	<button>click to move</button>
-<div></div>
+<div class="rect"></div>
 </body>
 </html>
